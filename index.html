@@ -12,14 +12,13 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <span class="header__logo">
             <img class="header__logo-img" src="./assets/piano.png" />
             PianoArte
         </span>
         <nav aria-label="Menu principal de navegação" class="header__nav">
             <ul class="header__menu">
-
                 <li class="header__menu-item"><a href="#historia">História</a></li>
                 <li class="header__menu-item"><a href="#professores">Professores</a></li>
                 <li class="header__menu-item"><a href="#depoimentos">Depoimentos</a></li>
@@ -28,7 +27,7 @@
             </ul>
         </nav>
 
-    </header> -->
+    </header>
 
     <main class="main">
         <section class="hero" id="home">
@@ -39,7 +38,7 @@
         </section>
 
         <section class="history" id="historia" role="region" aria-labelledby="history__title">
-            <h2 class="history__title" id="history__title">Nossa História</h2>
+            <h2 class="history__title" id="history__title">História</h2>
             <div class="history__content">
                 <p class="history__paragraph">
                     Fundada em 2010, a Piano Arte nasceu do sonho de tornar o ensino do piano acessível, humano e inspirador para pessoas de todas as idades. Criada por um grupo de professores apaixonados por música e pedagogia, a escola teve início em São Paulo e rapidamente se destacou pela sua proposta acolhedora e personalizada.
@@ -58,20 +57,17 @@
         <section id="professores" class="teachers" role="region" aria-labelledby="teachers__title">
             <h2 id="teachers__title" class="teachers__title">Professores</h2>
 
-            <section class="teachers__cards">
+            <div class="teachers__cards">
 
-                <article class="teachers__card">
-
+                <article class="teachers__card" tabindex="0">
                     <img src="/assets/professora_1.jpg" alt="Foto da professora Ana Mendes" class="teachers__card-image" />
                     <h3 class="teachers__card-title">Ana Mendes</h3>
                     <p class="teachers__card-description">
                         Ana Mendes é bacharel em Piano pela Universidade de São Paulo (USP), com especializações em Pedagogia do Instrumento pela Faculdade Mozarteum e em Música Popular Brasileira pela EMESP Tom Jobim. Com mais de 15 anos de experiência no ensino de piano, ela atua tanto no repertório erudito quanto no popular, dominando estilos que vão do clássico ao contemporâneo. Já participou de projetos como o “Piano para Todos” e realizou recitais didáticos em instituições culturais e escolas de música.
-
                     </p>
                 </article>
 
-                <article class="teachers__card">
-
+                <article class="teachers__card" tabindex="0">
                     <img src="/assets/professora_2.jpg" alt="Foto da professora Marcia Santos" class="teachers__card-image" />
                     <h3 class="teachers__card-title">Marcia Santos</h3>
                     <p class="teachers__card-description">
@@ -79,8 +75,7 @@
                     </p>
                 </article>
 
-                <article class="teachers__card">
-
+                <article class="teachers__card" tabindex="0">
                     <img src="/assets/professor_3.jpg" alt="Foto do professor Silvio Alves" class="teachers__card-image" />
                     <h3 class="teachers__card-title">Silvio Alves</h3>
                     <p class="teachers__card-description">
@@ -88,8 +83,9 @@
                     </p>
                 </article>
 
-            </section>
+            </div>
         </section>
+
 
 
         <section id="depoimentos" class="testimonials" role="region" aria-labelledby="testimonials__title">
@@ -98,7 +94,7 @@
             <div class="testimonials__list">
 
                 <article class="testimonials__item">
-                    <img src="/assets/aluno_1.jpg" alt="Lucas, student at the piano school" class="testimonials__image" />
+                    <img src="/assets/aluno_1.jpg" alt="Foto do aluno Lucas" class="testimonials__image" />
                     <blockquote class="testimonials__quote">
                         "Comecei as aulas sem nenhuma experiência e fiquei surpreso com o quanto evoluí em pouco tempo. A metodologia é leve, os professores são muito atenciosos, e hoje tocar piano virou parte da minha rotina. Recomendo demais!"
                         <cite class="testimonials__name">— Lucas, 27</cite>
@@ -106,7 +102,7 @@
                 </article>
 
                 <article class="testimonials__item">
-                    <img src="/assets/aluno_2.jpg" alt="Bruno, student at the piano school" class="testimonials__image" />
+                    <img src="/assets/aluno_2.jpg" alt="Foto do aluno Bruno" class="testimonials__image" />
                     <blockquote class="testimonials__quote">
                         "Sempre tive o sonho de aprender piano, mas achava que era tarde demais. Aqui, encontrei um ambiente acolhedor, professores incríveis e uma abordagem que respeita meu ritmo. Foi a melhor escolha que eu poderia ter feito."
                         <cite class="testimonials__name">— Bruno, 29</cite>
@@ -114,7 +110,7 @@
                 </article>
 
                 <article class="testimonials__item">
-                    <img src="/assets/aluna_3.jpg" alt="Fernanda, student at the piano school" class="testimonials__image" />
+                    <img src="/assets/aluna_3.jpg" alt="Foto da aluna Fernanda" class="testimonials__image" />
                     <blockquote class="testimonials__quote">
                         "As aulas são muito bem estruturadas e personalizadas. Mesmo com a correria do dia a dia, consigo aprender e me sentir motivada a continuar. Tocar piano virou minha terapia. A escola me mostrou que música é para todos!"
                         <cite class="testimonials__name">— Fernanda, 30</cite>
@@ -123,8 +119,6 @@
 
             </div>
         </section>
-
-
 
         <section class="plans" id="planos" role="region" aria-labelledby="plans__title">
             <h2 class="plans__title" id="plans__title">Planos</h2>
@@ -143,7 +137,7 @@
                     <p class="plans__description"><strong>Ideal para começar no piano com tranquilidade.</strong></p>
                 </article>
 
-                <article class="plans__card plans__card--classico">
+                <article class="plans__card">
                     <h3 class="plans__card-title">Plano Clássico</h3>
                     <ul class="plans__list">
                         <li class="plans__item">2 aulas presenciais por semana (60 min)</li>
@@ -155,7 +149,7 @@
                     <p class="plans__description"><strong>Focado na evolução técnica com mais atenção.</strong></p>
                 </article>
 
-                <article class="plans__card plans__card--premium">
+                <article class="plans__card">
                     <h3 class="plans__card-title">Plano Premium</h3>
                     <ul class="plans__list">
                         <li class="plans__item">3 aulas presenciais por semana (60 min)</li>
@@ -173,7 +167,6 @@
 
         <section class="contact" id="contato" role="region" aria-labelledby="contact__title">
             <h2 class="contact__title" id="contact__title">Contato</h2>
-
 
             <form class="contact__form" aria-label="Formulário de contato da escola">
                 <fieldset class="contact__fieldset">
@@ -251,7 +244,7 @@
                 <h3 class="footer__unit-title">Unidade 2</h3>
                 <div>
                     <address class="footer__address">Av. Musica Classica, 234 </address>
-                    <address>Pinheiros, São Paulo - SP</address>
+                    <address>Vila Mariana, São Paulo - SP</address>
                     <span class="footer__phone">Tel: (11) 4141-4141</span>
                 </div>
 
@@ -261,7 +254,7 @@
                 <h3 class="footer__unit-title">Unidade 3</h3>
                 <div>
                     <address class="footer__address">Av. Musica Classica, 234 </address>
-                    <address>Bairro da Tijuca, Rio de Janeiro - RJ</address>
+                    <address>Botafogo, Rio de Janeiro - RJ</address>
                     <span class="footer__phone">Tel: (21) 4141-4141</span>
                 </div>
 
@@ -269,10 +262,10 @@
         </section>
 
         <section class="footer__credits">
-            <p class="footer__copyright">
+            <p>
                 Escola Piano Arte © 2025. Todos os direitos reservados
             </p>
-            <p class="footer__developer">
+            <p>
                 Desenvolvido por Camila Madureira
             </p>
         </section>
