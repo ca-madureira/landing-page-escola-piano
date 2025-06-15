@@ -19,4 +19,8 @@ Esta página apresenta as principais informações institucionais da escola fict
 - CSS3  
 - Metodologia BEM para organização das classes CSS
 
+![landing_page_desktop](https://github.com/user-attachments/assets/039fe492-26c0-44a7-90f9-a1cec1b7d80f)
 
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/b0680fe6-08c1-4fbb-8ecd-6f3f5567f33a"/>
+</div>
