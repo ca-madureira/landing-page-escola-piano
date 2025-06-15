@@ -241,10 +241,8 @@
 }
 
 .testimonials__name {
-  display: block;
   font-weight: bold;
   color: #7f5539;
-  margin-top: 0.5rem;
 }
 
 .plans {
@@ -261,7 +259,7 @@
   color: #4a2f16;
   margin-bottom: 3rem;
   text-align: center;
-  letter-spacing: 0.05em;
+
 }
 
 .plans__cards {
@@ -293,8 +291,6 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
   outline: none;
 }
-
-
 
 .plans__card-title {
   font-family: "Delius Swash Caps", cursive;
@@ -644,14 +640,6 @@
   margin: 0;
 }
 
-.footer__social-item {
-  transition: transform 0.3s ease;
-}
-
-.footer__social-item:hover {
-  transform: scale(1.15);
-}
-
 .footer__social-link {
   display: flex;
   align-items: center;
@@ -767,25 +755,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .footer__info {
-    padding: 1.5rem 1rem;
-    gap: 1.5rem;
-  }
-
-  .footer__card,
-  .footer__card-school {
-    padding: 1rem;
-  }
-
-  .footer__title {
-    font-size: 1.125rem;
-  }
-
-  .footer__unit-title {
-    font-size: 1.25rem;
-  }
-}
 
 @media (max-width: 768px) {
   .header {
@@ -849,14 +818,12 @@
     padding: 1rem;
   }
 
-  .teachers__card:hover,
-  .teacher__card:focus {
+  .teachers__card:hover {
     transform: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
   }
 
-  .testimonials__item:hover,
-  .testimonials__card:focus {
+  .testimonials__item:hover {
     transform: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
   }
@@ -866,7 +833,7 @@
   }
 
   .plans__title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -880,36 +847,17 @@
     max-width: 100%;
     padding: 1.5rem 1.25rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
   }
 
-  .plans__card:hover,
-  .plans__card:focus {
-    transform: none;
+  .plans__card:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-  }
-
-
-  .plans__card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .plans__list {
-    font-size: 1rem;
+    transform: none;
   }
 
   .plans__description {
     font-size: 1rem;
     padding: 0 0.25rem;
-  }
-
-  .plans__item {
-    padding-left: 1.2em;
-    margin-bottom: 0.5em;
-  }
-
-  .plans__item::before {
-    font-size: 1rem;
   }
 
   .contact {
@@ -946,6 +894,10 @@
     padding: 0.9rem 1rem;
   }
 
+  .contact__form:hover {
+    transform: none;
+  }
+
   .contact__input {
     height: 3.2rem;
   }
@@ -968,8 +920,17 @@
     font-size: 0.95rem;
   }
 
+  .footer__card:hover,
+  .footer__card-school:hover {
+    transform: none;
+  }
+
   .footer__social-list {
     gap: 0.75rem;
+  }
+
+  .footer__social-link:hover {
+    transform: none;
   }
 
   .footer__credits {
